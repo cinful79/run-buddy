@@ -367,14 +367,12 @@
   /*******************************/
   
   
-    /* extra padding for the entire page
-    when I was looking at examples I thought the white space was supposed to be there so I added it with this styling
-    in retrospect I think it was an illusion given by the picture examples
-    
-    html {
+    /* padding for the entire page
+        html {
       padding-top: 50px;
       padding-left: 50px;
       padding-right: 50px;
       padding-bottom: 50px;
     }
   */
+  
