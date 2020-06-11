@@ -1,378 +1,362 @@
 /*Sets browser default margin and padding to 0*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* apply styles to body */
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #39a6b2
-  }
-  
-  /* apply styles to <header> */
-  header {
-    padding: 20px 35px;
-    background-color: #39a6b2;
-  }
-  
-  /*applying inline elements to h1 header*/
-  header h1 {
-    margin: 0;
-    display: inline;
-  }
-  
-  /*removes underline and color of link*/
-  header a{
-    text-decoration: none;
-    color: #fce138;
-  }
-  
-  /*applying <header> <h1> <a>*/
-  header h1 a{
-    font-weight: bold;
-    font-size: 36px;
-    color: #fce138;
-    text-decoration: none;
-  }
-  
-  
-  
-  /*moves nav bar inline to header*/
-  header nav {
-    float: right;
-    margin: 7px 0;
-   
-  }
-  
-  /*makes all listed items in unordered list inline with eachother*/
-  header nav ul li {
-    display: inline;
-  }
-  
-  /*Gives properties to a elements*/
-  header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 22px;
-  }
-  
-  
-  /*styling to footer*/
-  footer {
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-  }
-  
-  footer h2 {
-    display: inline;
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-  }
-  
-  footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-  }
-  
-  footer a {
-    color: #024e76
-  }
-  /* footer style end */
-  section {
-    padding: 60px;
-  }
-  
-  /***********************/
-  
-  /* hero style start */
-  
-  .hero {
-  
-    padding: 60px;
-    /* for some reason this CSS property doesn't work when I deploy it to github pages
-    
-    it will only work if I link the image inside the HTML file and I dont know why..
-    /* type ../ to indicate that I have to jump up one directory of where THIS styles.css file is located and then enter into /images directory */
-    background-image: url('../images/hero-bg.jpg'); 
-    height: 600px;
-    background-size: cover; 
-    background-position: center;
-    /* The bounds of THIS parent element are restricting the child elements relative to THIS parents own boundaries
-        PLEASE REMEMBER! position: static will allow the child element to go OUTSIDE the parents bounds! */
-    position: relative;
-  }
-  
-  /* creating a new div class here for everything contained inside the "hero-form" */
-  
-  .hero-form {
-    background-color: #fce138;
-    padding: 20px;
-    width: 500px;
-    color: #024e76;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #024e76;
-    border: solid 3px #024e76;
-    /* position this class element form within the bounds of its parent tag */
-    position: absolute;
-    /* any additional padding relating to the bounds of the parent tag */ 
-    bottom: 120px;
-    right: 140px;
-    
-    
-  }
-  
-  .hero-form h3 {
-    font-size: 24px;
-    margin:0;
-  }
-   /* styling the p nested inside the class hero-form */
-  .hero-form p{
-    margin: 5px 0 15px 0;
-  }
-  
-  /* creating a new class for the inputs in the form */
-  .form-input{
-    border: 1px solid #024e76;
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: #024e76;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  
-  /* creating a new class for the labels in the form */
-  .form-label{
-    margin: 0 5px;
-  }
-  
-  .hero-form button {
-    color: #fce138;
-    background-color: #024e76;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  
-  
-  /* hero style end */
-  
-  /********************/
-  
-  /* what we do styling, intro class*/
-  
-  .intro {
-    text-align: center;
-  }
-  
-  /* intro what we do text - 1.4.6 removing this CSS rule!!
-  combined declarations with .section-title .primary-border and .secondary-border
-  .intro h2{
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    /* padding order: top right bottom left *
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
-    display: inline-block;
-  }
-  */
-  
-  /* intro what we do paragraph text */
-  .intro p{
-    line-height: 1.7;
-    color: #39a6b2;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-  }
-  
-  /* adding additional classes to what we do intro section */
-  
-  .section-title{ /* this is also representing what you do section */
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
-    border-bottom: 3px solid;
-  }
-  
-  .primary-border{
-    border-color: #fce138;
-  }
-  
-  /* end what we do styling */
-  
-  /**************************/
-    
-  /* begin what you do steps class section */
-  /* section-title declared above already! :) */
-  
-  .steps{
-    text-align: center;
-    background: #fce138;
-  }
-  
-  /* styling text inside steps heading h2 - 1.4.6 removing this CSS rule! 
-  .steps h2{
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    /* padding format - top right bottom left *
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #39a6b2;
-  }
-  */
-  
-  .secondary-border{
-    border-color: #39a6b2;
-  }
-  
-  .steps div{
-    margin-bottom: 80px;
-  }
-  
-  .steps img{
-    width: 15%;
-    margin: 10px 0;
-  }
-  
-  .steps h3 {
-    color: #024e76;
-    font-size: 46px;
-    margin-top: 10px;
-  }
-  
-  .steps span{ /* inline element meant for highlighting sections of larger text blocks
-                  MUST define things otherwise it will keep the styling of its parent tag! */
-    font-size: 38px;
-  }
-  
-  .steps p{
-    color: #39a6b2;
-    font-size: 23px;
-  }
-  
-  /* begin your trainers section */
-  
-  /** section-title and primary-border is applied here too **/
-  
-  .trainers{
-    text-align: center;
-  }
-  
-  .trainer {
-    width: 900px;
-    /* margin: TOP RIGHT BOTTOM LEFT */
-    margin: 0 auto 30px auto;
-    background: #024e76;
-    overflow: auto;
-    color: #fce138;
-  }
-  
-  .trainer img {
-    width: 35%;
-    float: left;
-  }
-  
-  .trainer-bio {
-    padding: 35px;
-    float: left;
-    width: 65%
-  }
-  
-  .trainer-bio h3 {
-    font-size: 32px;
-    margin-bottom: 8px;
-  }
-  
-  .trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 26px;
-    margin-bottom: 25px;
-  }
-  
-  .trainer-bio p {
-    font-size: 17px;
-    line-height: 1.3;
-  }
-  
-  .text-left {
-    text-align: left;
-  }
-  
-  .text-right {
-    text-align: right;
-  }
-  
-  
-  
-  /* end your trainers section */
-  
-  /*******************************/
-  
-  /* begin reach out section */
-  
-  .contact {
-    text-align: center;
-    background: #024e76;
-    color: #fce138;
-  }
-  
-  .contact h2{
-    color: #fce138;
-  }
-  
-  .contact-info iframe {
-    width: 400px;
-    height: 400px;
-    
-  }
-  
-  .contact-info div {
-    width: 410px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: 30px 0 0 60px;
-    color: white;
-  }
-  
-  .contact-info h3 {
-    color: #fce138;
-    font-size: 32px;
-  }
-  
-  .contact-info p, .contact-info address{
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 20px;
-    font-style: normal;
-  }
-  
-  .contact-info a {
-    color: #fce138;
-  }
-  /* end reach out section */
-  
-  /*******************************/
-  
-  
-    /* padding for the entire page
-        html {
-      padding-top: 50px;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-bottom: 50px;
-    }
-  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* apply styles to body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #39a6b2
+}
+
+/* apply styles to <header> */
+header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*applying inline elements to h1 header*/
+header h1 {
+  margin: 0;
+  display: inline;
+  font-weight: bold;
+  color: #fce138;
+}
+
+/*applying <header> <h1> <a>*/
+header h1 a{
+  font-weight: bold;
+  font-size: 36px;
+  color: #fce138;
+  text-decoration: none;
+}
+
+/*removes underline and color of link*/
+header a{
+  text-decoration: none;
+  color: #fce138;
+}
+
+/*moves nav bar inline to header*/
+header nav {
+  margin: 7px 0;
+}
+
+/*makes all listed items in unordered list inline with eachother*/
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+
+/*Gives properties to a elements*/
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+
+/*styling to footer*/
+footer {
+  background: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer h2 {
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: #024e76
+}
+
+section {
+  padding: 60px;
+}
+
+/*Homepage Hero Style Start*/
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/*Hero Style End*/
+
+/*Hero Form Style Start*/
+
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: #fce138;
+}
+
+.hero-form{
+  background-color: #fce138;
+  color: #024e76;
+  padding: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #024e76;
+  width: 40%;
+  margin: 3.5%;
+}
+
+.hero-form h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+
+.form-input {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.hero-form label {
+  margin: 0 5px;
+}
+
+.hero-form button {
+  background-color: #024e76;
+  color: #fce138;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+}
+/*Hero Form Style End*/
+
+.section-title {
+  font-size: 55px;
+  color: #024e76;
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
+
+.intro p {
+  line-height: 1.7;
+  color: #39a6b2;
+  width: 80%;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.steps {
+  background: #fce138;
+}
+
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step h3 {
+  color: #024e76;
+  font-size: 46px;
+  flex: 1 30%;
+}
+
+.step-info{
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
+}
+
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+.step-img img {
+  max-width: 100%;
+}
+
+.step-text {
+  flex: 12;
+}
+
+.step-text p {
+  color: #39a6b2;
+  font-size: 18px;
+}
+
+.trainers {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.trainer {
+  margin: 20px;
+  background: #024e76;
+  color: #fce138;
+  flex: 1;
+}
+
+.trainer img {
+  width: 100%;
+}
+
+.trainer-bio {
+  padding: 35px;
+  padding: 25px;
+  line-height: 1.3;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.trainer-bio h3 {
+  font-size: 28px;
+}
+
+.trainer-bio h4 {
+  font-weight: lighter;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.trainer-bio p {
+  font-size: 17px;
+}
+
+/*reach out styles begin*/
+.contact {
+  background-color: #024e76;
+}
+
+.contact h2 {
+  color: #fce138;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
+.contact-info iframe {
+
+  height: 400px;
+}
+
+.contact-info div {
+  color: white;
+}
+
+.contact-info h3 {
+  color: #fce138;
+  font-size: 32px;
+}
+
+.contact-info p, .contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: #fce138;
+}
+/*reach out styles end*/
   
