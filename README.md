@@ -13,4 +13,4 @@ https://lernantino.github.io/run-buddy/
 ## Contribution
 Made with ❤️ by Cindy Bonilla
 
-### ©️2019 Run Buddy, In
+### ©️2019 Run Buddy, Inc
